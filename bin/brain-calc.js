@@ -11,11 +11,11 @@ const questionsAndAnswers = [
 ];
 
 const mathOperators = ['+', '-', '*'];
-const getRandomMathOperator = (operators) => operators[Math.round(Math.random() * 2)];
+const getRandomMathOperator = (operators) => operators[getRandomNumber(2)];
 
 for (let i = 0; i < 3; i += 1) {
-  const number1 = getRandomNumber();
-  const number2 = getRandomNumber();
+  const number1 = getRandomNumber(10);
+  const number2 = getRandomNumber(10);
   const mathOperator = getRandomMathOperator(mathOperators);
   let question;
   let answer;
