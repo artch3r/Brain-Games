@@ -1,49 +1,22 @@
-import readlineSync from 'readline-sync';
+import { getRandomNumber, gameEngine } from '../index.js';
 
 const brainEvenGame = () => {
-  const getRandomNumber = () => Math.round(Math.random() * 100);
+  const questionText = 'Answer "yes" if number is even, otherwise answer "no"';
 
-  const isEven = (number) => {
-    if (number % 2 === 0) {
-      return true;
-    }
-    return false;
-  };
+  const questionsAndAnswers = [
+    [],
+    [],
+    [],
+  ];
 
-  console.log('Welcome to the Brain Games!');
-  const name = readlineSync.question('May I have your name? ');
-  console.log(`Hello, ${name}!`);
-
-  console.log('Answer "yes" if number is even, otherwise answer "no"');
-  let score = 0;
-  for (let turn = 1; turn <= 3; turn += 1) {
-    const number = getRandomNumber();
-    console.log(`Question: ${number}`);
-    const answer = readlineSync.question('Your answer: ');
-    if (isEven(number)) {
-      if (answer === 'yes') {
-        console.log('Correct!');
-        score += 1;
-      } else {
-        console.log(`'${answer}' is wrong answer ;(. Correct answer was 'yes'.
-        Let's try again, ${name}!`);
-        break;
-      }
-    } else if (!isEven(number)) {
-      if (answer === 'no') {
-        console.log('Correct!');
-        score += 1;
-      } else {
-        console.log(`'${answer}' is wrong answer ;(. Correct answer was 'no'.
-        Let's try again, ${name}!`);
-        break;
-      }
-    }
+  for (let i = 0; i < 3; i += 1) {
+    const question = getRandomNumber(10);
+    const answer = question % 2 === 0 ? 'yes' : 'no';
+    questionsAndAnswers[i][0] = question;
+    questionsAndAnswers[i][1] = answer;
   }
 
-  if (score === 3) {
-    console.log(`Congratulations, ${name}!`);
-  }
+  gameEngine(questionText, questionsAndAnswers);
 };
 
 export default brainEvenGame;
