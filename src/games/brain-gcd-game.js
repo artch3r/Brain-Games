@@ -15,9 +15,9 @@ const brainGcdGame = () => {
     const question = `${number1} ${number2}`;
     const biggestNumber = number1 >= number2 ? number1 : number2;
     let answer = 1;
-    for (let i = 1; i <= biggestNumber; i += 1) {
-      if (number1 % i === 0 && number2 % i === 0 && i > answer) {
-        answer = i;
+    for (let divider = 1; divider <= biggestNumber; divider += 1) {
+      if (number1 % divider === 0 && number2 % divider === 0 && divider > answer) {
+        answer = divider;
       }
     }
     questionsAndAnswers[i][0] = question;
