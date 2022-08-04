@@ -12,8 +12,10 @@ const gameEngine = (questionText, questionsAndAnswers) => {
   for (let round = 0; round < questionsAndAnswers.length; round += 1) {
     const [question, correctAnswer] = questionsAndAnswers[round];
     console.log(`Question: ${question}`);
-    const userAnswer = readlineSync.question('Your answer: ');
-    if (Number(userAnswer) === correctAnswer) {
+    let userAnswer = readlineSync.question('Your answer: ');
+    if (typeof correctAnswer === 'number');
+    userAnswer = Number(userAnswer);
+    if (userAnswer === correctAnswer) {
       console.log('Correct!');
       score += 1;
     } else {
