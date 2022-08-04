@@ -13,8 +13,9 @@ const gameEngine = (questionText, questionsAndAnswers) => {
     const [question, correctAnswer] = questionsAndAnswers[round];
     console.log(`Question: ${question}`);
     let userAnswer = readlineSync.question('Your answer: ');
-    if (typeof correctAnswer === 'number');
-    userAnswer = Number(userAnswer);
+    if (typeof correctAnswer === 'number') {
+      userAnswer = Number(userAnswer);
+    }
     if (userAnswer === correctAnswer) {
       console.log('Correct!');
       score += 1;
