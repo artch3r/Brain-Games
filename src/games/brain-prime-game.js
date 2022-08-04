@@ -10,6 +10,9 @@ const brainPrimeGame = () => {
   ];
 
   const isPrime = (num) => {
+    if (num === 1) {
+      return 'no';
+    }
     const numberHalf = num / 2;
     for (let divider = 2; divider <= numberHalf; divider += 1) {
       if (num % divider === 0) {
