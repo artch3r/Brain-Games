@@ -1,6 +1,6 @@
-import { getRandomNumber, gameEngine } from '../index.js';
+import { getRandomNumber, runGameEngine } from '../index.js';
 
-const brainCalcGame = () => {
+const runCalc = () => {
   const questionText = 'What is the result of the expression?';
 
   const questionsAndAnswers = [
@@ -38,7 +38,7 @@ const brainCalcGame = () => {
     questionsAndAnswers[i][1] = answer;
   }
 
-  gameEngine(questionText, questionsAndAnswers);
+  runGameEngine(questionText, questionsAndAnswers);
 };
 
-export default brainCalcGame;
+export default runCalc;

@@ -1,6 +1,6 @@
-import { getRandomNumber, gameEngine } from '../index.js';
+import { getRandomNumber, runGameEngine } from '../index.js';
 
-const brainProgressionGame = () => {
+const runProgression = () => {
   const questionText = 'What number is missing in the progression?';
   const questionsAndAnswers = [
     [],
@@ -29,7 +29,7 @@ const brainProgressionGame = () => {
     questionsAndAnswers[i][1] = answer;
   }
 
-  gameEngine(questionText, questionsAndAnswers);
+  runGameEngine(questionText, questionsAndAnswers);
 };
 
-export default brainProgressionGame;
+export default runProgression;

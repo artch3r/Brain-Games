@@ -1,6 +1,6 @@
-import { getRandomNumber, gameEngine } from '../index.js';
+import { getRandomNumber, runGameEngine } from '../index.js';
 
-const brainEvenGame = () => {
+const runEven = () => {
   const questionText = 'Answer "yes" if number is even, otherwise answer "no"';
 
   const questionsAndAnswers = [
@@ -16,7 +16,7 @@ const brainEvenGame = () => {
     questionsAndAnswers[i][1] = answer;
   }
 
-  gameEngine(questionText, questionsAndAnswers);
+  runGameEngine(questionText, questionsAndAnswers);
 };
 
-export default brainEvenGame;
+export default runEven;
