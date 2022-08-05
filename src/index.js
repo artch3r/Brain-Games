@@ -1,7 +1,5 @@
 import readlineSync from 'readline-sync';
 
-const getRandomNumber = (finiteNumber) => Math.floor(Math.random() * finiteNumber) + 1;
-
 const runGameEngine = (questionText, questionsAndAnswers) => {
   console.log('Welcome to the Brain Games!');
   const name = readlineSync.question('May I have your name? ');
@@ -31,4 +29,4 @@ const runGameEngine = (questionText, questionsAndAnswers) => {
   }
 };
 
-export { getRandomNumber, runGameEngine };
+export default runGameEngine;

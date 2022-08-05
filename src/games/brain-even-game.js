@@ -1,4 +1,5 @@
-import { getRandomNumber, runGameEngine } from '../index.js';
+import runGameEngine from '../index.js';
+import getRandomNumber from '../utils.js';
 
 const runEven = () => {
   const questionText = 'Answer "yes" if number is even, otherwise answer "no"';

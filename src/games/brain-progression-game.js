@@ -1,4 +1,5 @@
-import { getRandomNumber, runGameEngine } from '../index.js';
+import runGameEngine from '../index.js';
+import getRandomNumber from '../utils.js';
 
 const runProgression = () => {
   const questionText = 'What number is missing in the progression?';

@@ -1,4 +1,5 @@
-import { getRandomNumber, runGameEngine } from '../index.js';
+import runGameEngine from '../index.js';
+import getRandomNumber from '../utils.js';
 
 const runCalc = () => {
   const questionText = 'What is the result of the expression?';
