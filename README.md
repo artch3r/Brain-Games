@@ -36,7 +36,9 @@
 *__brain-gcd__*
 [![asciicast](https://asciinema.org/a/R4dKSZ5OLtzF2ZzA65t2jWAt4.svg)](https://asciinema.org/a/R4dKSZ5OLtzF2ZzA65t2jWAt4)
 
-[!asciicast](https://asciinema.org/a/4WGwFSztzUqEWMTuiFDTWoGVY.svg)](https://asciinema.org/a/4WGwFSztzUqEWMTuiFDTWoGVY)
+*__brain-progression__*
+[![asciicast](https://asciinema.org/a/4WGwFSztzUqEWMTuiFDTWoGVY.svg)](https://asciinema.org/a/4WGwFSztzUqEWMTuiFDTWoGVY)
 
-[!asciicast](https://asciinema.org/a/UmYj7R5yAYF0yypQAuWuK77X4.svg)](https://asciinema.org/a/UmYj7R5yAYF0yypQAuWuK77X4)
+*__brain-prime__*
+[![asciicast](https://asciinema.org/a/UmYj7R5yAYF0yypQAuWuK77X4)](https://asciinema.org/a/UmYj7R5yAYF0yypQAuWuK77X4)
 
