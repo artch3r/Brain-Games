@@ -28,7 +28,7 @@
 * `brain-progression`
 
 *__brain-even__*
-[![asciicast](https://asciinema.org/a/l40Lrk3midkLmNEOmgZErGnY7.svg)](https://asciinema.org/a/l40Lrk3midkLmNEOmgZErGnY7)
+[![asciicast](https://asciinema.org/a/Dev5jbJ8aTflNXts17gHXxxwk.svg)](https://asciinema.org/a/Dev5jbJ8aTflNXts17gHXxxwk)
 
 *__brain-calc__*
 [![asciicast](https://asciinema.org/a/4e67wD13fSrSDMreVkRigg4na.svg)](https://asciinema.org/a/4e67wD13fSrSDMreVkRigg4na)
