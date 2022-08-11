@@ -13,7 +13,7 @@
 * Определение простого числа.
 
 ##Минимальные требования
-* Операционная система - Windows + WSL/ MacOS/ Linux
+* nodejs актуальной версии
 
 ##Инструкции по установке и запуску
 1. Скопируйте репозиторий к себе на устройство для локального использования с помощью команды `git clone`.
@@ -27,6 +27,9 @@
 * brain-prime
 * brain-progression
 ```
+[![asciicast]
+(https://asciinema.org/a/l40Lrk3midkLmNEOmgZErGnY7.svg)]
+(https://asciinema.org/a/l40Lrk3midkLmNEOmgZErGnY7)
 
 https://asciinema.org/a/l40Lrk3midkLmNEOmgZErGnY7 - brain-even
 
