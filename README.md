@@ -26,18 +26,18 @@
 * `brain-prime`
 * `brain-progression`
 
-[![asciicast](https://asciinema.org/a/UmYj7R5yAYF0yypQAuWuK77X4.svg)](https://asciinema.org/a/UmYj7R5yAYF0yypQAuWuK77X4)
+*__brain-even__*
+[![asciicast](https://asciinema.org/a/l40Lrk3midkLmNEOmgZErGnY7.svg)](https://asciinema.org/a/l40Lrk3midkLmNEOmgZErGnY7)
 
-[![asciicast]
-(https://asciinema.org/a/l40Lrk3midkLmNEOmgZErGnY7.svg)]
-(https://asciinema.org/a/l40Lrk3midkLmNEOmgZErGnY7)
+*__brain-calc__*
+[![asciicast](https://asciinema.org/a/4e67wD13fSrSDMreVkRigg4na.svg)](https://asciinema.org/a/4e67wD13fSrSDMreVkRigg4na)
 
-https://asciinema.org/a/l40Lrk3midkLmNEOmgZErGnY7 - brain-even
+*__brain-gcd__*
+[![asciicast](https://asciinema.org/a/R4dKSZ5OLtzF2ZzA65t2jWAt4.svg)](https://asciinema.org/a/R4dKSZ5OLtzF2ZzA65t2jWAt4)
 
-https://asciinema.org/a/4e67wD13fSrSDMreVkRigg4na - brain-calc
+*__brain-progression__*
+[!asciicast](https://asciinema.org/a/4WGwFSztzUqEWMTuiFDTWoGVY.svg)](https://asciinema.org/a/4WGwFSztzUqEWMTuiFDTWoGVY)
 
-https://asciinema.org/a/R4dKSZ5OLtzF2ZzA65t2jWAt4 - brain-gcd
+*__brain-prime__*
+[!asciicast](https://asciinema.org/a/UmYj7R5yAYF0yypQAuWuK77X4.svg)](https://asciinema.org/a/UmYj7R5yAYF0yypQAuWuK77X4)
 
-https://asciinema.org/a/4WGwFSztzUqEWMTuiFDTWoGVY - brain-progression
-
-https://asciinema.org/a/UmYj7R5yAYF0yypQAuWuK77X4 - brain-prime
