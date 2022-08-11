@@ -5,7 +5,8 @@
 
 # Описание Проекта
 **«Игры разума»** — набор из пяти консольных игр, построенных по принципу популярных мобильных приложений для прокачки мозга. Каждая игра задает вопросы, на которые нужно дать правильные ответы. После трех правильных ответов считается, что игра пройдена. Неправильные ответы завершают игру и предлагают пройти ее заново.
-Игры:
+
+*__Игры:__*
 * Калькулятор. Арифметические выражения, которые необходимо вычислить.
 * Прогрессия. Поиск пропущенных чисел в последовательности чисел.
 * Определение четного числа.
@@ -35,9 +36,7 @@
 *__brain-gcd__*
 [![asciicast](https://asciinema.org/a/R4dKSZ5OLtzF2ZzA65t2jWAt4.svg)](https://asciinema.org/a/R4dKSZ5OLtzF2ZzA65t2jWAt4)
 
-*__brain-progression__*
 [!asciicast](https://asciinema.org/a/4WGwFSztzUqEWMTuiFDTWoGVY.svg)](https://asciinema.org/a/4WGwFSztzUqEWMTuiFDTWoGVY)
 
-*__brain-prime__*
 [!asciicast](https://asciinema.org/a/UmYj7R5yAYF0yypQAuWuK77X4.svg)](https://asciinema.org/a/UmYj7R5yAYF0yypQAuWuK77X4)
 
