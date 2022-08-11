@@ -21,9 +21,9 @@ const runGameEngine = (questionText, questionsAndAnswers) => {
       Let's try again, ${name}!`);
       break;
     }
-    if (score === 3) {
-      console.log(`Congratulations, ${name}!`);
-    }
+  }
+  if (score === 3) {
+    console.log(`Congratulations, ${name}!`);
   }
 };
 
