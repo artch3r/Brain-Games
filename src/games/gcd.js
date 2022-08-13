@@ -13,9 +13,9 @@ const getGcd = (number1, number2) => {
 };
 
 const runGcd = () => {
-  const questionText = 'Find the greatest common divisor of given numbers.';
+  const description = 'Find the greatest common divisor of given numbers.';
 
-  const questionsAndAnswers = [
+  const tasks = [
     [],
     [],
     [],
@@ -26,11 +26,11 @@ const runGcd = () => {
     const number2 = getRandomNumber(10);
     const question = `${number1} ${number2}`;
     const answer = getGcd(number1, number2);
-    questionsAndAnswers[round][0] = question;
-    questionsAndAnswers[round][1] = answer;
+    tasks[round][0] = question;
+    tasks[round][1] = answer;
   }
 
-  run(questionText, questionsAndAnswers);
+  run(description, tasks);
 };
 
 export default runGcd;

@@ -30,9 +30,9 @@ const generateRound = () => {
 };
 
 const runCalc = () => {
-  const questionText = 'What is the result of the expression?';
+  const description = 'What is the result of the expression?';
 
-  const questionsAndAnswers = [
+  const tasks = [
     [],
     [],
     [],
@@ -40,11 +40,11 @@ const runCalc = () => {
 
   for (let round = 0; round < 3; round += 1) {
     const [question, answer] = generateRound();
-    questionsAndAnswers[round][0] = question;
-    questionsAndAnswers[round][1] = answer;
+    tasks[round][0] = question;
+    tasks[round][1] = answer;
   }
 
-  run(questionText, questionsAndAnswers);
+  run(description, tasks);
 };
 
 export default runCalc;

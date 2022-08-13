@@ -22,9 +22,9 @@ const generateRound = () => {
 };
 
 const runProgression = () => {
-  const questionText = 'What number is missing in the progression?';
+  const description = 'What number is missing in the progression?';
 
-  const questionsAndAnswers = [
+  const tasks = [
     [],
     [],
     [],
@@ -32,11 +32,11 @@ const runProgression = () => {
 
   for (let round = 0; round < 3; round += 1) {
     const [question, answer] = generateRound();
-    questionsAndAnswers[round][0] = question;
-    questionsAndAnswers[round][1] = answer;
+    tasks[round][0] = question;
+    tasks[round][1] = answer;
   }
 
-  run(questionText, questionsAndAnswers);
+  run(description, tasks);
 };
 
 export default runProgression;

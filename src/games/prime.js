@@ -15,9 +15,9 @@ const isPrime = (num) => {
 };
 
 const runPrime = () => {
-  const questionText = 'Answer "yes" if given number is prime. Otherwise answer "no".';
+  const description = 'Answer "yes" if given number is prime. Otherwise answer "no".';
 
-  const questionsAndAnswers = [
+  const tasks = [
     [],
     [],
     [],
@@ -26,11 +26,11 @@ const runPrime = () => {
   for (let round = 0; round < 3; round += 1) {
     const question = getRandomNumber(10);
     const answer = isPrime(question) ? 'yes' : 'no';
-    questionsAndAnswers[round][0] = question;
-    questionsAndAnswers[round][1] = answer;
+    tasks[round][0] = question;
+    tasks[round][1] = answer;
   }
 
-  run(questionText, questionsAndAnswers);
+  run(description, tasks);
 };
 
 export default runPrime;
