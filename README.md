@@ -30,19 +30,19 @@ make install
 npm link
 ```
 4. Запускайте команды из терминала, используя команды:
-* ```
+```
 brain-even
 ```
-* ```
+```
 brain-calc
 ```
-* ```
-brain-gcd
+```brain-gcd
 ```
-* ```
+```
 brain-prime
 ```
-* ```brain-progression```
+```brain-progression
+```
 
 *__brain-even__*
 [![asciicast](https://asciinema.org/a/Dev5jbJ8aTflNXts17gHXxxwk.svg)](https://asciinema.org/a/Dev5jbJ8aTflNXts17gHXxxwk)
