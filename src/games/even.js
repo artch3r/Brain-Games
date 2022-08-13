@@ -1,4 +1,4 @@
-import runGameEngine from '../index.js';
+import run from '../index.js';
 import getRandomNumber from '../utils.js';
 
 const isEven = (number) => number % 2 === 0;
@@ -19,7 +19,7 @@ const runEven = () => {
     questionsAndAnswers[round][1] = answer;
   }
 
-  runGameEngine(questionText, questionsAndAnswers);
+  run(questionText, questionsAndAnswers);
 };
 
 export default runEven;

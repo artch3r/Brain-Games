@@ -1,4 +1,4 @@
-import runGameEngine from '../index.js';
+import run from '../index.js';
 import getRandomNumber from '../utils.js';
 
 const getGcd = (number1, number2) => {
@@ -30,7 +30,7 @@ const runGcd = () => {
     questionsAndAnswers[round][1] = answer;
   }
 
-  runGameEngine(questionText, questionsAndAnswers);
+  run(questionText, questionsAndAnswers);
 };
 
 export default runGcd;
