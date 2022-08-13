@@ -1,5 +1,5 @@
 import run from '../index.js';
-import getRandomNumber from '../utils.js';
+import { getRandomNumber, tasksCount } from '../utils.js';
 
 const getGcd = (number1, number2) => {
   const biggestNumber = number1 >= number2 ? number1 : number2;
@@ -21,7 +21,7 @@ const runGcd = () => {
     [],
   ];
 
-  for (let round = 0; round < 3; round += 1) {
+  for (let round = 0; round < tasksCount; round += 1) {
     const number1 = getRandomNumber(10);
     const number2 = getRandomNumber(10);
     const question = `${number1} ${number2}`;

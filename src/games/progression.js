@@ -1,5 +1,5 @@
 import run from '../index.js';
-import getRandomNumber from '../utils.js';
+import { getRandomNumber, tasksCount } from '../utils.js';
 
 const getProgressionLength = (min, max) => {
   const number = Math.floor(Math.random() * (max - min + 1) + min);
@@ -30,7 +30,7 @@ const runProgression = () => {
     [],
   ];
 
-  for (let round = 0; round < 3; round += 1) {
+  for (let round = 0; round < tasksCount; round += 1) {
     const [question, answer] = generateRound();
     tasks[round][0] = question;
     tasks[round][1] = answer;

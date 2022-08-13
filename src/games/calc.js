@@ -1,5 +1,5 @@
 import run from '../index.js';
-import getRandomNumber from '../utils.js';
+import { getRandomNumber, tasksCount } from '../utils.js';
 
 const getRandomMathOperator = (operators) => operators[getRandomNumber(2)];
 
@@ -38,7 +38,7 @@ const runCalc = () => {
     [],
   ];
 
-  for (let round = 0; round < 3; round += 1) {
+  for (let round = 0; round < tasksCount; round += 1) {
     const [question, answer] = generateRound();
     tasks[round][0] = question;
     tasks[round][1] = answer;

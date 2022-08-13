@@ -1,5 +1,5 @@
 import run from '../index.js';
-import getRandomNumber from '../utils.js';
+import { getRandomNumber, tasksCount } from '../utils.js';
 
 const isPrime = (num) => {
   if (num === 1) {
@@ -23,7 +23,7 @@ const runPrime = () => {
     [],
   ];
 
-  for (let round = 0; round < 3; round += 1) {
+  for (let round = 0; round < tasksCount; round += 1) {
     const question = getRandomNumber(10);
     const answer = isPrime(question) ? 'yes' : 'no';
     tasks[round][0] = question;

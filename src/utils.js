@@ -1,3 +1,5 @@
 const getRandomNumber = (finiteNumber) => Math.floor(Math.random() * finiteNumber) + 1;
 
-export default getRandomNumber;
+const tasksCount = 3;
+
+export { getRandomNumber, tasksCount };
