@@ -12,24 +12,20 @@ const getGcd = (number1, number2) => {
   return answer;
 };
 
+const generateRound = () => {
+  const number1 = getRandomNumber(1, 10);
+  const number2 = getRandomNumber(1, 10);
+  const question = `${number1} ${number2}`;
+  const answer = getGcd(number1, number2);
+  return [question, answer];
+};
+
 const runGcd = () => {
   const description = 'Find the greatest common divisor of given numbers.';
-
-  const tasks = [
-    [],
-    [],
-    [],
-  ];
-
-  for (let round = 0; round < tasksCount; round += 1) {
-    const number1 = getRandomNumber(1, 10);
-    const number2 = getRandomNumber(1, 10);
-    const question = `${number1} ${number2}`;
-    const answer = getGcd(number1, number2);
-    tasks[round][0] = question;
-    tasks[round][1] = answer;
+  const tasks = [];
+  for (let i = 0; i < tasksCount; i += 1) {
+    tasks.push(generateRound());
   }
-
   run(description, tasks);
 };
 

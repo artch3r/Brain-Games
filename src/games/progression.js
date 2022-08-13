@@ -18,19 +18,10 @@ const generateRound = () => {
 
 const runProgression = () => {
   const description = 'What number is missing in the progression?';
-
-  const tasks = [
-    [],
-    [],
-    [],
-  ];
-
-  for (let round = 0; round < tasksCount; round += 1) {
-    const [question, answer] = generateRound();
-    tasks[round][0] = question;
-    tasks[round][1] = answer;
+  const tasks = [];
+  for (let i = 0; i < tasksCount; i += 1) {
+    tasks.push(generateRound());
   }
-
   run(description, tasks);
 };
 

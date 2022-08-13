@@ -14,22 +14,18 @@ const isPrime = (num) => {
   return true;
 };
 
+const generateRound = () => {
+  const question = getRandomNumber(1, 10);
+  const answer = isPrime(question) ? 'yes' : 'no';
+  return [question, answer];
+};
+
 const runPrime = () => {
   const description = 'Answer "yes" if given number is prime. Otherwise answer "no".';
-
-  const tasks = [
-    [],
-    [],
-    [],
-  ];
-
-  for (let round = 0; round < tasksCount; round += 1) {
-    const question = getRandomNumber(1, 10);
-    const answer = isPrime(question) ? 'yes' : 'no';
-    tasks[round][0] = question;
-    tasks[round][1] = answer;
+  const tasks = [];
+  for (let i = 0; i < tasksCount; i += 1) {
+    tasks.push(generateRound());
   }
-
   run(description, tasks);
 };
 

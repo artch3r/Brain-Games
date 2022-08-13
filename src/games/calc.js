@@ -1,7 +1,7 @@
 import run from '../index.js';
 import { getRandomNumber, tasksCount } from '../utils.js';
 
-const getRandomMathOperator = (operators) => operators[getRandomNumber(2)];
+const getRandomMathOperator = (operators) => operators[getRandomNumber(0, 2)];
 
 const generateRound = () => {
   const mathOperators = ['+', '-', '*'];
@@ -31,19 +31,10 @@ const generateRound = () => {
 
 const runCalc = () => {
   const description = 'What is the result of the expression?';
-
-  const tasks = [
-    [],
-    [],
-    [],
-  ];
-
-  for (let round = 0; round < tasksCount; round += 1) {
-    const [question, answer] = generateRound();
-    tasks[round][0] = question;
-    tasks[round][1] = answer;
+  const tasks = [];
+  for (let i = 0; i < tasksCount; i += 1) {
+    tasks.push(generateRound());
   }
-
   run(description, tasks);
 };
 
