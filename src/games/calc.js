@@ -3,29 +3,31 @@ import { getRandomNumber, tasksCount } from '../utils.js';
 
 const getRandomMathOperator = (operators) => operators[getRandomNumber(0, 2)];
 
-const generateRound = () => {
-  const mathOperators = ['+', '-', '*'];
-  const number1 = getRandomNumber(1, 10);
-  const number2 = getRandomNumber(1, 10);
-  const mathOperator = getRandomMathOperator(mathOperators);
-  let question;
+const calculate = (number1, number2, mathOperator) => {
   let answer;
   switch (mathOperator) {
     case '+':
-      question = `${number1} + ${number2}`;
       answer = number1 + number2;
       break;
     case '-':
-      question = `${number1} - ${number2}`;
       answer = number1 - number2;
       break;
     case '*':
-      question = `${number1} * ${number2}`;
       answer = number1 * number2;
       break;
     default:
       break;
   }
+  return answer;
+};
+
+const generateRound = () => {
+  const mathOperators = ['+', '-', '*'];
+  const number1 = getRandomNumber(1, 10);
+  const number2 = getRandomNumber(1, 10);
+  const mathOperator = getRandomMathOperator(mathOperators);
+  const question = `${number1} ${mathOperator} ${number2}`;
+  const answer = calculate(number1, number2, mathOperator);
   return [question, answer];
 };
 
