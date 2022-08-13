@@ -1,7 +1,7 @@
 import run from '../index.js';
 import { getRandomNumber, tasksCount } from '../utils.js';
 
-const generateRound = () => {
+const generateProgression = () => {
   const progressionLength = getRandomNumber(5, 10);
   const progression = [];
   const progressionStep = getRandomNumber(1, 5);
@@ -9,7 +9,12 @@ const generateRound = () => {
   for (let progressInd = 1; progressInd < progressionLength; progressInd += 1) {
     progression[progressInd] = progression[progressInd - 1] + progressionStep;
   }
-  const gapIndex = getRandomNumber(0, progressionLength - 1);
+  return progression;
+};
+
+const generateRound = () => {
+  const progression = generateProgression();
+  const gapIndex = getRandomNumber(0, progression.length - 1);
   const answer = progression[gapIndex];
   progression[gapIndex] = '..';
   const question = progression.join(' ');
