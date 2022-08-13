@@ -36,12 +36,14 @@ brain-even
 ```
 brain-calc
 ```
-```brain-gcd
+```
+brain-gcd
 ```
 ```
 brain-prime
 ```
-```brain-progression
+```
+brain-progression
 ```
 
 *__brain-even__*
