@@ -13,13 +13,12 @@ const run = (questionText, questionsAndAnswers) => {
     if (typeof correctAnswer === 'number') {
       userAnswer = Number(userAnswer);
     }
-    if (userAnswer === correctAnswer) {
-      console.log('Correct!');
-    } else {
+    if (userAnswer !== correctAnswer) {
       console.log(`'${userAnswer}' is wrong answer ;(. Correct answer was '${correctAnswer}'.
       Let's try again, ${name}!`);
       return;
     }
+    console.log('Correct!');
   }
   console.log(`Congratulations, ${name}!`);
 };
