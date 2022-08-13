@@ -1,4 +1,7 @@
-const getRandomNumber = (finiteNumber) => Math.floor(Math.random() * finiteNumber) + 1;
+const getRandomNumber = (min, max) => {
+  const number = Math.floor(Math.random() * (max - min + 1) + min);
+  return number;
+};
 
 const tasksCount = 3;
 

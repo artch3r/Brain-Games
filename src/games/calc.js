@@ -5,8 +5,8 @@ const getRandomMathOperator = (operators) => operators[getRandomNumber(2)];
 
 const generateRound = () => {
   const mathOperators = ['+', '-', '*'];
-  const number1 = getRandomNumber(10);
-  const number2 = getRandomNumber(10);
+  const number1 = getRandomNumber(1, 10);
+  const number2 = getRandomNumber(1, 10);
   const mathOperator = getRandomMathOperator(mathOperators);
   let question;
   let answer;

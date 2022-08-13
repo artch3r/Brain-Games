@@ -22,8 +22,8 @@ const runGcd = () => {
   ];
 
   for (let round = 0; round < tasksCount; round += 1) {
-    const number1 = getRandomNumber(10);
-    const number2 = getRandomNumber(10);
+    const number1 = getRandomNumber(1, 10);
+    const number2 = getRandomNumber(1, 10);
     const question = `${number1} ${number2}`;
     const answer = getGcd(number1, number2);
     tasks[round][0] = question;

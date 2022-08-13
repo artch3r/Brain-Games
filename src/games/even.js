@@ -13,7 +13,7 @@ const runEven = () => {
   ];
 
   for (let round = 0; round < tasksCount; round += 1) {
-    const question = getRandomNumber(10);
+    const question = getRandomNumber(1, 10);
     const answer = isEven(question) ? 'yes' : 'no';
     tasks[round][0] = question;
     tasks[round][1] = answer;
