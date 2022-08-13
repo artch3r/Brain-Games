@@ -5,7 +5,6 @@ const run = (questionText, questionsAndAnswers) => {
   const name = readlineSync.question('May I have your name? ');
   console.log(`Hello, ${name}!`);
   console.log(questionText);
-  let score = 0;
   for (let round = 0; round < questionsAndAnswers.length; round += 1) {
     const [question, correctAnswer] = questionsAndAnswers[round];
     console.log(`Question: ${question}`);
@@ -15,16 +14,13 @@ const run = (questionText, questionsAndAnswers) => {
     }
     if (userAnswer === correctAnswer) {
       console.log('Correct!');
-      score += 1;
     } else {
       console.log(`'${userAnswer}' is wrong answer ;(. Correct answer was '${correctAnswer}'.
       Let's try again, ${name}!`);
-      break;
+      return;
     }
   }
-  if (score === 3) {
-    console.log(`Congratulations, ${name}!`);
-  }
+  console.log(`Congratulations, ${name}!`);
 };
 
 export default run;
