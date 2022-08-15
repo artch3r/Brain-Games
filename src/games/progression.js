@@ -1,5 +1,5 @@
 import run, { roundsCount } from '../index.js';
-import { getRandomNumber } from '../utils.js';
+import { getRandomNumber, getRandomIndex } from '../utils.js';
 
 const description = 'What number is missing in the progression?';
 const minLength = 5;
@@ -23,9 +23,7 @@ const generateRound = () => {
   const step = getRandomNumber(minStep, maxStep);
   const length = getRandomNumber(minLength, maxLength);
   const progression = createProgression(start, step, length);
-  const firstIndex = 0;
-  const lastIndex = progression.length - 1;
-  const gapIndex = getRandomNumber(firstIndex, lastIndex);
+  const gapIndex = getRandomIndex(progression);
   const gap = progression[gapIndex];
   progression[gapIndex] = '..';
   const question = progression.join(' ');
