@@ -1,5 +1,5 @@
-import run from '../index.js';
-import { getRandomNumber, tasksCount } from '../utils.js';
+import run, { roundsCount } from '../index.js';
+import { getRandomNumber } from '../utils.js';
 
 const getGcd = (number1, number2) => {
   const biggestNumber = number1 >= number2 ? number1 : number2;
@@ -22,11 +22,11 @@ const generateRound = () => {
 
 const runGcd = () => {
   const description = 'Find the greatest common divisor of given numbers.';
-  const tasks = [];
-  for (let i = 0; i < tasksCount; i += 1) {
-    tasks.push(generateRound());
+  const rounds = [];
+  for (let i = 0; i < roundsCount; i += 1) {
+    rounds.push(generateRound());
   }
-  run(description, tasks);
+  run(description, rounds);
 };
 
 export default runGcd;

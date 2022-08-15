@@ -1,5 +1,5 @@
-import run from '../index.js';
-import { getRandomNumber, tasksCount } from '../utils.js';
+import run, { roundsCount } from '../index.js';
+import { getRandomNumber } from '../utils.js';
 
 const isEven = (number) => number % 2 === 0;
 
@@ -11,11 +11,11 @@ const generateRound = () => {
 
 const runEven = () => {
   const description = 'Answer "yes" if number is even, otherwise answer "no"';
-  const tasks = [];
-  for (let i = 0; i < tasksCount; i += 1) {
-    tasks.push(generateRound());
+  const rounds = [];
+  for (let i = 0; i < roundsCount; i += 1) {
+    rounds.push(generateRound());
   }
-  run(description, tasks);
+  run(description, rounds);
 };
 
 export default runEven;

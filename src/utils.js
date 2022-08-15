@@ -3,6 +3,4 @@ const getRandomNumber = (min, max) => {
   return number;
 };
 
-const tasksCount = 3;
-
-export { getRandomNumber, tasksCount };
+export { getRandomNumber };
