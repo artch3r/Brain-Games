@@ -25,12 +25,10 @@ const generateRound = () => {
   return [question, answer];
 };
 
-const runGcd = () => {
+export default () => {
   const rounds = [];
   for (let i = 0; i < roundsCount; i += 1) {
     rounds.push(generateRound());
   }
   run(description, rounds);
 };
-
-export default runGcd;
