@@ -6,11 +6,11 @@ const minRange = 1;
 const maxRange = 10;
 
 const isPrime = (num) => {
-  if (num === 1) {
+  if (num < 2) {
     return false;
   }
-  const numberHalf = num / 2;
-  for (let divider = 2; divider <= numberHalf; divider += 1) {
+  const numSqrt = Math.sqrt(num);
+  for (let divider = 2; divider <= numSqrt; divider += 1) {
     if (num % divider === 0) {
       return false;
     }
