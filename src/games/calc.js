@@ -4,21 +4,16 @@ import { getRandomNumber } from '../utils.js';
 const getRandomMathOperator = (operators) => operators[getRandomNumber(0, 2)];
 
 const calculate = (number1, number2, mathOperator) => {
-  let answer;
   switch (mathOperator) {
     case '+':
-      answer = number1 + number2;
-      break;
+      return number1 + number2;
     case '-':
-      answer = number1 - number2;
-      break;
+      return number1 - number2;
     case '*':
-      answer = number1 * number2;
-      break;
+      return number1 * number2;
     default:
-      break;
+      throw new Error('Unknown operator. Check conditions');
   }
-  return answer;
 };
 
 const generateRound = () => {
