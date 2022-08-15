@@ -9,19 +9,20 @@ const maxStep = 5;
 const minRange = 1;
 const maxRange = 100;
 
-const generateProgression = () => {
-  const progressionLength = getRandomNumber(minLength, maxLength);
+const createProgression = (start, step, length) => {
   const progression = [];
-  const progressionStep = getRandomNumber(minStep, maxStep);
-  progression[0] = getRandomNumber(minRange, maxRange);
-  for (let progressInd = 1; progressInd < progressionLength; progressInd += 1) {
-    progression[progressInd] = progression[progressInd - 1] + progressionStep;
+  progression[0] = start;
+  for (let i = 1; i < length; i += 1) {
+    progression[i] = progression[i - 1] + step;
   }
   return progression;
 };
 
 const generateRound = () => {
-  const progression = generateProgression();
+  const start = getRandomNumber(minRange, maxRange);
+  const step = getRandomNumber(minStep, maxStep);
+  const length = getRandomNumber(minLength, maxLength);
+  const progression = createProgression(start, step, length);
   const firstIndex = 0;
   const lastIndex = progression.length - 1;
   const gapIndex = getRandomNumber(firstIndex, lastIndex);
