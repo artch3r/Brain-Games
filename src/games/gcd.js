@@ -1,11 +1,11 @@
 import run, { roundsCount } from '../index.js';
 import { getRandomNumber } from '../utils.js';
 
-const getGcd = (number1, number2) => {
-  const biggestNumber = number1 >= number2 ? number1 : number2;
+const getGcd = (x, y) => {
+  const biggestNumber = x >= y ? x : y;
   let answer = 1;
   for (let divider = 1; divider <= biggestNumber; divider += 1) {
-    if (number1 % divider === 0 && number2 % divider === 0 && divider > answer) {
+    if (x % divider === 0 && y % divider === 0 && divider > answer) {
       answer = divider;
     }
   }

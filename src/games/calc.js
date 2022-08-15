@@ -3,24 +3,24 @@ import { getRandomNumber } from '../utils.js';
 
 const getRandomMathOperator = (operators) => operators[getRandomNumber(0, 2)];
 
-const calculate = (number1, number2, mathOperator) => {
-  switch (mathOperator) {
+const calculate = (x, y, operator) => {
+  switch (operator) {
     case '+':
-      return number1 + number2;
+      return x + y;
     case '-':
-      return number1 - number2;
+      return x - y;
     case '*':
-      return number1 * number2;
+      return x * y;
     default:
       throw new Error('Unknown operator. Check conditions');
   }
 };
 
 const generateRound = () => {
-  const mathOperators = ['+', '-', '*'];
+  const operators = ['+', '-', '*'];
   const number1 = getRandomNumber(1, 10);
   const number2 = getRandomNumber(1, 10);
-  const mathOperator = getRandomMathOperator(mathOperators);
+  const mathOperator = getRandomMathOperator(operators);
   const result = calculate(number1, number2, mathOperator);
   const question = `${number1} ${mathOperator} ${number2}`;
   const answer = String(result);
