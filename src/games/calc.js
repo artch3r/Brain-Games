@@ -26,8 +26,9 @@ const generateRound = () => {
   const number1 = getRandomNumber(1, 10);
   const number2 = getRandomNumber(1, 10);
   const mathOperator = getRandomMathOperator(mathOperators);
+  const result = calculate(number1, number2, mathOperator);
   const question = `${number1} ${mathOperator} ${number2}`;
-  const answer = calculate(number1, number2, mathOperator);
+  const answer = String(result);
   return [question, answer];
 };
 

@@ -15,9 +15,10 @@ const generateProgression = () => {
 const generateRound = () => {
   const progression = generateProgression();
   const gapIndex = getRandomNumber(0, progression.length - 1);
-  const answer = progression[gapIndex];
+  const gap = progression[gapIndex];
   progression[gapIndex] = '..';
   const question = progression.join(' ');
+  const answer = String(gap);
   return [question, answer];
 };
 

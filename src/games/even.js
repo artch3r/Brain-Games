@@ -4,8 +4,10 @@ import { getRandomNumber } from '../utils.js';
 const isEven = (number) => number % 2 === 0;
 
 const generateRound = () => {
-  const question = getRandomNumber(1, 10);
-  const answer = isEven(question) ? 'yes' : 'no';
+  const number = getRandomNumber(1, 10);
+  const result = isEven(number) ? 'yes' : 'no';
+  const question = String(number);
+  const answer = String(result);
   return [question, answer];
 };
 

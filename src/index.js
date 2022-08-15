@@ -10,10 +10,7 @@ const run = (description, rounds) => {
   for (let i = 0; i < roundsCount; i += 1) {
     const [question, correctAnswer] = rounds[i];
     console.log(`Question: ${question}`);
-    let userAnswer = readlineSync.question('Your answer: ');
-    if (typeof correctAnswer === 'number') {
-      userAnswer = Number(userAnswer);
-    }
+    const userAnswer = readlineSync.question('Your answer: ');
     if (userAnswer !== correctAnswer) {
       console.log(`'${userAnswer}' is wrong answer ;(. Correct answer was '${correctAnswer}'.
       Let's try again, ${name}!`);
