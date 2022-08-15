@@ -3,6 +3,8 @@ import { getRandomNumber } from '../utils.js';
 
 const description = 'What is the result of the expression?';
 const operators = ['+', '-', '*'];
+const minRange = 1;
+const maxRange = 10;
 
 const getRandomMathOperator = (mathOperators) => mathOperators[getRandomNumber(0, 2)];
 
@@ -20,8 +22,8 @@ const calculate = (x, y, operator) => {
 };
 
 const generateRound = () => {
-  const number1 = getRandomNumber(1, 10);
-  const number2 = getRandomNumber(1, 10);
+  const number1 = getRandomNumber(minRange, maxRange);
+  const number2 = getRandomNumber(minRange, maxRange);
   const mathOperator = getRandomMathOperator(operators);
   const result = calculate(number1, number2, mathOperator);
   const question = `${number1} ${mathOperator} ${number2}`;

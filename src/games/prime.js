@@ -2,6 +2,8 @@ import run, { roundsCount } from '../index.js';
 import { getRandomNumber } from '../utils.js';
 
 const description = 'Answer "yes" if given number is prime. Otherwise answer "no".';
+const minRange = 1;
+const maxRange = 10;
 
 const isPrime = (num) => {
   if (num === 1) {
@@ -17,7 +19,7 @@ const isPrime = (num) => {
 };
 
 const generateRound = () => {
-  const number = getRandomNumber(1, 10);
+  const number = getRandomNumber(minRange, maxRange);
   const result = isPrime(number) ? 'yes' : 'no';
   const question = String(number);
   const answer = String(result);
