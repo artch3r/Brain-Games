@@ -1,6 +1,8 @@
 import run, { roundsCount } from '../index.js';
 import { getRandomNumber } from '../utils.js';
 
+const description = 'What number is missing in the progression?';
+
 const generateProgression = () => {
   const progressionLength = getRandomNumber(5, 10);
   const progression = [];
@@ -23,7 +25,6 @@ const generateRound = () => {
 };
 
 const runProgression = () => {
-  const description = 'What number is missing in the progression?';
   const rounds = [];
   for (let i = 0; i < roundsCount; i += 1) {
     rounds.push(generateRound());

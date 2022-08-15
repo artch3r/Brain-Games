@@ -1,7 +1,10 @@
 import run, { roundsCount } from '../index.js';
 import { getRandomNumber } from '../utils.js';
 
-const getRandomMathOperator = (operators) => operators[getRandomNumber(0, 2)];
+const description = 'What is the result of the expression?';
+const operators = ['+', '-', '*'];
+
+const getRandomMathOperator = (mathOperators) => mathOperators[getRandomNumber(0, 2)];
 
 const calculate = (x, y, operator) => {
   switch (operator) {
@@ -17,7 +20,6 @@ const calculate = (x, y, operator) => {
 };
 
 const generateRound = () => {
-  const operators = ['+', '-', '*'];
   const number1 = getRandomNumber(1, 10);
   const number2 = getRandomNumber(1, 10);
   const mathOperator = getRandomMathOperator(operators);
@@ -28,7 +30,6 @@ const generateRound = () => {
 };
 
 const runCalc = () => {
-  const description = 'What is the result of the expression?';
   const rounds = [];
   for (let i = 0; i < roundsCount; i += 1) {
     rounds.push(generateRound());

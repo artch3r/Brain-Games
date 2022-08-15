@@ -1,6 +1,8 @@
 import run, { roundsCount } from '../index.js';
 import { getRandomNumber } from '../utils.js';
 
+const description = 'Find the greatest common divisor of given numbers.';
+
 const getGcd = (x, y) => {
   const biggestNumber = x >= y ? x : y;
   let answer = 1;
@@ -22,7 +24,6 @@ const generateRound = () => {
 };
 
 const runGcd = () => {
-  const description = 'Find the greatest common divisor of given numbers.';
   const rounds = [];
   for (let i = 0; i < roundsCount; i += 1) {
     rounds.push(generateRound());
