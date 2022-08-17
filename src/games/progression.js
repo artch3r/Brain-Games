@@ -22,11 +22,11 @@ const generateRound = () => {
   const step = getRandomNumber(minStep, maxStep);
   const length = getRandomNumber(minLength, maxLength);
   const progression = createProgression(start, step, length);
-  const gapIndex = getRandomIndex(progression);
-  const gap = progression[gapIndex];
-  progression[gapIndex] = '..';
+  const hiddenIndex = getRandomIndex(progression);
+  const hidden = progression[hiddenIndex];
+  progression[hiddenIndex] = '..';
   const question = progression.join(' ');
-  const answer = String(gap);
+  const answer = String(hidden);
   return [question, answer];
 };
 
