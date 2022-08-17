@@ -1,4 +1,4 @@
-import run, { roundsCount } from '../index.js';
+import run from '../index.js';
 import { getRandomNumber, getRandomIndex } from '../utils.js';
 
 const description = 'What is the result of the expression?';
@@ -29,9 +29,5 @@ const generateRound = () => {
 };
 
 export default () => {
-  const rounds = [];
-  for (let i = 0; i < roundsCount; i += 1) {
-    rounds.push(generateRound());
-  }
-  run(description, rounds);
+  run(description, generateRound);
 };

@@ -1,4 +1,4 @@
-import run, { roundsCount } from '../index.js';
+import run from '../index.js';
 import { getRandomNumber } from '../utils.js';
 
 const description = 'Answer "yes" if number is even, otherwise answer "no"';
@@ -15,9 +15,5 @@ const generateRound = () => {
 };
 
 export default () => {
-  const rounds = [];
-  for (let i = 0; i < roundsCount; i += 1) {
-    rounds.push(generateRound());
-  }
-  run(description, rounds);
+  run(description, generateRound);
 };
