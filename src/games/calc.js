@@ -23,9 +23,8 @@ const generateRound = () => {
   const number1 = getRandomNumber(minRange, maxRange);
   const number2 = getRandomNumber(minRange, maxRange);
   const mathOperator = operators[getRandomIndex(operators)];
-  const result = calculate(number1, number2, mathOperator);
   const question = `${number1} ${mathOperator} ${number2}`;
-  const answer = String(result);
+  const answer = String(calculate(number1, number2, mathOperator));
   return [question, answer];
 };
 

@@ -20,9 +20,8 @@ const isPrime = (num) => {
 
 const generateRound = () => {
   const number = getRandomNumber(minRange, maxRange);
-  const result = isPrime(number) ? 'yes' : 'no';
   const question = String(number);
-  const answer = String(result);
+  const answer = isPrime(number) ? 'yes' : 'no';
   return [question, answer];
 };
 
