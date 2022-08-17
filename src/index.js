@@ -20,5 +20,3 @@ export default (description, generateRound) => {
   }
   console.log(`Congratulations, ${name}!`);
 };
-
-export { roundsCount };
