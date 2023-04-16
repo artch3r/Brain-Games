@@ -3,33 +3,30 @@
 
 <a href="https://codeclimate.com/github/artch3r/frontend-project-lvl1/maintainability"><img src="https://api.codeclimate.com/v1/badges/9a6fa6bf551e6a7e6412/maintainability" /></a>
 
-# Описание Проекта
-**«Игры разума»** — набор из пяти консольных игр, построенных по принципу популярных мобильных приложений для прокачки мозга. Каждая игра задает вопросы, на которые нужно дать правильные ответы. После трех правильных ответов считается, что игра пройдена. Неправильные ответы завершают игру и предлагают пройти ее заново.
+# Description
+**«Brain Games»** is a set of five console games inspired by popular mobile brain-pumping apps. Each game asks questions to be answered correctly. Once three correct answers are given, the game ends. Incorrect answers end the game and prompt you to play it again.
 
-*__Игры:__*
-* Калькулятор. Арифметические выражения, которые необходимо вычислить.
-* Прогрессия. Поиск пропущенных чисел в последовательности чисел.
-* Определение четного числа.
-* Определение наибольшего общего делителя.
-* Определение простого числа.
+*__Games:__*
+* Calculator. Calculate random arithmetic expressions
+* Progression. Find missing numbers in a number sequence
+* Determining an even number
+* Determining the greatest common divisor
+* Determining a prime number
 
-## Минимальные требования
-* nodejs актуальной версии
-
-## Инструкции по установке и запуску
-1. Скопируйте репозиторий к себе на устройство для локального использования с помощью команды 
+## Install and usage instructions
+1. Copy repository to your device for local usage
 ```
 git clone
 ```
-2. Установите зависимости проекта для его корректного использования с помощью команды 
+2. Install package dependencies 
 ```
 make install
 ```
-3. Установите игры к себе на устройство с помощью команды 
+3. Install games on your device
 ```
 npm link
 ```
-4. Запускайте команды из терминала, используя команды:
+4. To start use commands
 ```
 brain-even
 ```
@@ -59,5 +56,5 @@ brain-progression
 [![asciicast](https://asciinema.org/a/39Y0l5aBsOHV7Irm4WSMAsnOt.svg)](https://asciinema.org/a/39Y0l5aBsOHV7Irm4WSMAsnOt)
 
 *__brain-prime__*
-[![asciicast](https://asciinema.org/a/NpLrTx74N6IvLb72TtfCy5xzW.svg)](https://asciinema.org/a/NpLrTx74N6IvLb72TtfCy5xzW)
+[![asciicast](https://asciinema.org/a/NpLrTx74N6IvLb72TtfCy5xzW.svg)](https://asciinema.org/a/NpLrTx74N6IvLb72TtfCy5xzW)  
 
