@@ -1,7 +1,7 @@
 import run from '../index.js';
 import { getRandomNumber } from '../utils.js';
 
-const description = 'Answer "yes" if number is even, otherwise answer "no"';
+const description = 'Answer "yes" if the number is even, otherwise answer "no".';
 const minRange = 1;
 const maxRange = 10;
 
